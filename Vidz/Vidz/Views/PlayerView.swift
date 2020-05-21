@@ -9,15 +9,13 @@
 import SwiftUI
 
 struct PlayerView: UIViewRepresentable {
-    
-    var urlString: String
+
     var videoPlayer = VideoPlayerView()
     
     func updateUIView(_ uiView: UIView, context: UIViewRepresentableContext<PlayerView>) {
     }
     
     func makeUIView(context: Context) -> UIView {
-        videoPlayer.urlString = urlString
         return videoPlayer
     }
     

@@ -2,30 +2,35 @@
     {
         "id": 1,
         "name": "Breath",
+        "videoDescription": "A stolen video from Vimeo",
         "thumbnailUrl": "breath.png",
         "url": "https://teemusk.com/temp/videos/01.mp4"
     },
     {
         "id": 2,
         "name": "Squares",
+        "videoDescription": "Video showing some squares",
         "thumbnailUrl": "squares.png",
         "url": "https://teemusk.com/temp/videos/02.mp4"
     },
     {
         "id": 3,
         "name": "Particles",
+        "videoDescription": "Cool particle animation",
         "thumbnailUrl": "particles.png",
         "url": "https://teemusk.com/temp/videos/03.mp4"
     },
     {
         "id": 4,
         "name": "Ripple",
+        "videoDescription": "Ripple animation I made myself",
         "thumbnailUrl": "ripple.png",
         "url": "https://teemusk.com/temp/videos/04.mov"
     },
     {
         "id": 5,
         "name": "Molecule",
+        "videoDescription": "A molecule or a virus",
         "thumbnailUrl": "molecule.png",
         "url": "https://teemusk.com/temp/videos/05.mp4"
     }

@@ -11,6 +11,7 @@ import SwiftUI
 struct VideoItemData: Hashable, Codable, Identifiable {
     var id: Int
     var name: String
+    var videoDescription: String
     var thumbnailUrl: String
     var url: String
 }

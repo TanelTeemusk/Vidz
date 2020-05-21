@@ -106,7 +106,6 @@
 			children = (
 				51F55A982473C08C003DBAA8 /* AppDelegate.swift */,
 				51F55A9A2473C08C003DBAA8 /* SceneDelegate.swift */,
-				5195C97524752C5E00317553 /* VideoDownloader.swift */,
 				51F55AB22473C285003DBAA8 /* Model */,
 				51F55AAC2473C120003DBAA8 /* VideoList.swift */,
 				519E78BC2473EE9300A9F702 /* VideoDetails.swift */,
@@ -131,6 +130,7 @@
 		51F55AB22473C285003DBAA8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5195C97524752C5E00317553 /* VideoDownloader.swift */,
 				5195C979247542C000317553 /* FileHandler.swift */,
 				51F55AB52473C56B003DBAA8 /* Data.swift */,
 				519E78B92473E17100A9F702 /* VideoItemData.swift */,

@@ -27,7 +27,7 @@ struct VideoRow: View {
 
 struct TestRow_Previews: PreviewProvider {
     static var previews: some View {
-        let data = VideoItemData(id: 0, name: "Cool video", thumbnailUrl: "stmarylake.jpg", url: "https://teemusk.com/temp/videos/01.mp4")
+        let data = VideoItemData(id: 0, name: "Cool video", videoDescription: "Hello", thumbnailUrl: "stmarylake.jpg", url: "https://teemusk.com/temp/videos/01.mp4")
         
         return Group {
             VideoRow(data: data)

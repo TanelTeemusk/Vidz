@@ -15,9 +15,9 @@ struct VideoList: View {
         let videos = videoData
      
         return NavigationView {
+          
             List(videos) { video in
-                NavigationLink(destination: VideoDetails(
-                    data: video)) {
+                NavigationLink(destination: VideoDetails(data: video)) {
                     VideoRow(data: video)
                 } //navigationLink
             } //List

@@ -23,11 +23,12 @@ class VideoDownloader: NSObject, URLSessionDownloadDelegate, URLSessionTaskDeleg
     @Published var progress = Progress()
     private var completion: (() -> Void)?
     
+    override init() {
+        super.init()
+    }
     func load(from urlString: String, onCompletion: @escaping () -> Void) {
         
         guard let url = URL(string: urlString) else { return }
-        
-        print(url.absoluteString)
         
         let session = URLSession(configuration: .default, delegate: self, delegateQueue: OperationQueue.main)
             
@@ -43,7 +44,6 @@ class VideoDownloader: NSObject, URLSessionDownloadDelegate, URLSessionTaskDeleg
         self.downloadTask?.cancel()
         self.urlSession = nil
         self.downloadTask = nil
-        print("Download canceled")
     }
   
     func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask, didFinishDownloadingTo location: URL) {

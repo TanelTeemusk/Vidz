@@ -17,14 +17,17 @@ enum DownloadButtonStates {
 struct VideoDetails: View {
     var data: VideoItemData
     var downloader = VideoDownloader()
+    var playerView = PlayerView()
     
     @State var buttonState : DownloadButtonStates = .initial
     
     var body: some View {
-        let playerview = PlayerView(urlString: data.url)
         stateUpdated()
         return VStack {
-            playerview
+            self.playerView
+            Text(self.data.videoDescription)
+                .font(.caption)
+            Spacer()
             if self.buttonState == .initial {
                 DownloadButtonView(state: $buttonState)
             } else if self.buttonState == .downloading {
@@ -36,11 +39,14 @@ struct VideoDetails: View {
         }
         .navigationBarTitle(Text("\(data.name)"))
         .onAppear() {
+            print("Video Details onAppear")
             self.buttonState = self.getDownloadState()
+            self.playerView.videoPlayer.urlString = self.data.url
+            self.playerView.videoPlayer.play()
         }
         .onDisappear() {
             self.downloader.cancel()
-            playerview.videoPlayer.cancel()
+            self.playerView.videoPlayer.cancel()
         }
         
     }
@@ -65,9 +71,6 @@ struct VideoDetails: View {
 
 struct VideoDetails_Previews: PreviewProvider {
     static var previews: some View {
-        VideoDetails(data: VideoItemData(id: 0, name: "unnamed", thumbnailUrl: "rainbowlake", url: "https://teemusk.com/temp/videos/04.mp4"))
+        VideoDetails(data: VideoItemData(id: 0, name: "unnamed", videoDescription: "hello", thumbnailUrl: "rainbowlake", url: "https://teemusk.com/temp/videos/04.mp4"))
     }
 }
-
-
-

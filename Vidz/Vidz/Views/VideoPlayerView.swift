@@ -12,6 +12,7 @@ import AVKit
 class VideoPlayerView: UIView {
 
     private let playerLayer = AVPlayerLayer()
+    
     var urlString: String = "" {
         didSet {
             if oldValue == urlString { return }
@@ -40,7 +41,7 @@ class VideoPlayerView: UIView {
         
         let player = AVPlayer(url: url)
         player.actionAtItemEnd = .none
-        player.play()
+        
         player.volume = 0.2
         playerLayer.player = player
         layer.addSublayer(playerLayer)
@@ -49,14 +50,18 @@ class VideoPlayerView: UIView {
                                                selector: #selector(playerItemDidReachEnd(notification:)),
                                                name: .AVPlayerItemDidPlayToEndTime,
                                                object: player.currentItem)
-        
+    }
+    
+    func play() {
+        playerLayer.player?.play()
     }
     
     func cancel() {
         playerLayer.player?.pause()
-        playerLayer.player?.replaceCurrentItem(with: nil)
-        playerLayer.removeFromSuperlayer()
-        NotificationCenter.default.removeObserver(self)
+//        playerLayer.player?.replaceCurrentItem(with: nil)
+//        playerLayer.player = nil
+//        playerLayer.removeFromSuperlayer()
+//        NotificationCenter.default.removeObserver(self)
         print("Player killed")
     }
     
@@ -69,5 +74,6 @@ class VideoPlayerView: UIView {
     
     deinit {
         print("\(self) deinit")
+        cancel()
     }
 }
