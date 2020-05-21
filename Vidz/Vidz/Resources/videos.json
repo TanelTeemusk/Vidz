@@ -1,32 +1,32 @@
 [
     {
         "id": 1,
-        "name": "First video",
-        "thumbnailUrl": "icybay.jpg",
+        "name": "Breath",
+        "thumbnailUrl": "breath.png",
         "url": "https://teemusk.com/temp/videos/01.mp4"
     },
     {
         "id": 2,
-        "name": "second video",
-        "thumbnailUrl": "chilkoottrail.jpg",
+        "name": "Squares",
+        "thumbnailUrl": "squares.png",
         "url": "https://teemusk.com/temp/videos/02.mp4"
     },
     {
         "id": 3,
-        "name": "third video",
-        "thumbnailUrl": "chincoteague.jpg",
+        "name": "Particles",
+        "thumbnailUrl": "particles.png",
         "url": "https://teemusk.com/temp/videos/03.mp4"
     },
     {
         "id": 4,
-        "name": "fourth video",
-        "thumbnailUrl": "hiddenlake.jpg",
+        "name": "Ripple",
+        "thumbnailUrl": "ripple.png",
         "url": "https://teemusk.com/temp/videos/04.mov"
     },
     {
         "id": 5,
-        "name": "Fifth video",
-        "thumbnailUrl": "lakemcdonald.jpg",
+        "name": "Molecule",
+        "thumbnailUrl": "molecule.png",
         "url": "https://teemusk.com/temp/videos/05.mp4"
     }
 ]

@@ -15,7 +15,9 @@ struct VideoRow: View {
         return HStack(spacing: 12) {
             data.thumbnail
                 .resizable()
+                .aspectRatio(contentMode: .fill)
                 .frame(width: 50, height: 50)
+                .clipped()
             Text("\(data.name)")
             Spacer()
         }

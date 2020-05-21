@@ -31,6 +31,7 @@ struct VideoDetails: View {
                 DownloadProgressBarView(state: $buttonState, progress: downloader.progress)
             } else if self.buttonState == .downloaded {
                 Text("Video downloaded")
+                    
             }
         }
         .navigationBarTitle(Text("\(data.name)"))
@@ -64,7 +65,7 @@ struct VideoDetails: View {
 
 struct VideoDetails_Previews: PreviewProvider {
     static var previews: some View {
-        VideoDetails(data: VideoItemData(id: 0, name: "hello", thumbnailUrl: "rainbowlake", url: "https://teemusk.com/temp/videos/01.mp4"), buttonState: .downloading)
+        VideoDetails(data: VideoItemData(id: 0, name: "unnamed", thumbnailUrl: "rainbowlake", url: "https://teemusk.com/temp/videos/04.mp4"))
     }
 }
 
