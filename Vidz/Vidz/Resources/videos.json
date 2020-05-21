@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "First video",
+        "thumbnailUrl": "icybay.jpg",
+        "url": "https://teemusk.com/temp/videos/01.mp4"
+    },
+    {
+        "id": 2,
+        "name": "second video",
+        "thumbnailUrl": "chilkoottrail.jpg",
+        "url": "https://teemusk.com/temp/videos/02.mp4"
+    },
+    {
+        "id": 3,
+        "name": "third video",
+        "thumbnailUrl": "chincoteague.jpg",
+        "url": "https://teemusk.com/temp/videos/03.mp4"
+    },
+    {
+        "id": 4,
+        "name": "fourth video",
+        "thumbnailUrl": "hiddenlake.jpg",
+        "url": "https://teemusk.com/temp/videos/04.mov"
+    },
+    {
+        "id": 5,
+        "name": "Fifth video",
+        "thumbnailUrl": "lakemcdonald.jpg",
+        "url": "https://teemusk.com/temp/videos/05.mp4"
+    }
+]
